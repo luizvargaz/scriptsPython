@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <!-- HIGHSTOCKS AND JQUERY -->
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.js"></script>
+
+    <!-- OUR JAVASCRIPT -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+      
+  // Chart Initialization
+  var chart = new Highcharts.StockChart({
+    chart: {
+      renderTo: 'chart' 
+    },
+    legend: {
+        align: 'center',
+        borderWidth: 0
+    },
+    title: {
+      text: 'Daily Precipitation' 
+    },
+    yAxis: {
+      labels: {
+        formatter: function(){
+          return this.value + ' mm';  
+        }
+      }
+    },
+    series: []  
+  });  
+
+
+  // getLocationData Function
+  function getLocationData(request, onSuccess){
+
+    // Construct URL  
+    var url = 'https://insight.api.wdtinc.com/';
+    url += request.endpoint + '/';
+    url += request.latitude + '/' + request.longitude;  
+
+    // Request Precipitation Data
+    $.ajax({
+      url: url,
+      beforeSend: function(xhr){
+        xhr.setRequestHeader("Authorization", "Basic " + btoa(request.appId + ":" + request.appKey));
+        xhr.setRequestHeader("Accept", "application/vnd.wdt+json; version=1");
+      },
+      data: {
+        start: moment(request.start).format('YYYY-MM-DD'),
+        end: moment(request.end).format('YYYY-MM-DD') 
+      },
+      dataType: 'json',
+      cache: false,
+      success: onSuccess,
+      error: function(){
+        console.log('Whoops, something went wrong.');
+      }
+    }); 
+  }
+
+  // onSuccess Function 
+  function onSuccess(data){
+    var seriesData = data.series.map(function(point){
+      return [parseInt(moment(point.validDate).format('x')),
+              point.value];
+
+    });
+    if(data.latitude === 35.4){
+       name = 'Oklahoma City'
+    }
+    else {
+       name = 'San Francisco' 
+    }
+    chart.addSeries({
+      name: name,
+      data: seriesData
+    });
+  }
+
+  // Request OKC Daily Precip
+  getLocationData({
+    endpoint: 'daily-precipitation',
+    latitude: 35.4,
+    longitude: -97.5,
+    start: '2016-06-01',
+    end: '2016-06-30',
+    appId: '114e04e1',
+    appKey: 'd22d2cc81614aee4afe2f804238e3959'
+  }, onSuccess);
+
+  // Request San Francisco Daily Precip
+  getLocationData({
+    endpoint: 'daily-precipitation',
+    latitude: 30.3,
+    longitude: -81.6,
+    start: '2016-06-01',
+    end: '2016-06-30',
+    appId: '114e04e1',
+    appKey: 'd22d2cc81614aee4afe2f804238e3959'
+  }, onSuccess);
+
+});
+    </script>
+  </head>
+  <body>
+    <div id="chart"></div>
+  </body>
+</html>
