@@ -1,0 +1,13 @@
+Valles_Altos_Maiz	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3Ae980f49a-8d89-43ca-b112-bd8236019234%5D%2FB%3AFotografia1	uuid:e980f49a-8d89-43ca-b112-bd8236019234
+Chiapas	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3Ae0bcbc89-a45d-45a9-9e2a-99e818a3848f%5D%2FB%3AFotografia1	uuid:e0bcbc89-a45d-45a9-9e2a-99e818a3848f
+Chiapas	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3A8fbd156f-bd52-4be5-9bf5-e16cb7882680%5D%2FB%3AFotografia1	uuid:8fbd156f-bd52-4be5-9bf5-e16cb7882680
+Valles_Altos_Grano_Pequeno	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3Af5e0eaa0-9561-48cb-af12-3b2be45fbf6e%5D%2FB%3AFotografia1	uuid:f5e0eaa0-9561-48cb-af12-3b2be45fbf6e
+Valles_Altos_Grano_Pequeno	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3A6e96b8e8-840b-4313-9b82-47f0f8d8a443%5D%2FB%3AFotografia1	uuid:6e96b8e8-840b-4313-9b82-47f0f8d8a443
+Bajio	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3Ab684b51e-cf4f-43c8-9d4f-83f21e59d5dc%5D%2FB%3AFotografia1	uuid:b684b51e-cf4f-43c8-9d4f-83f21e59d5dc
+Yucatan	http://104.239.158.49:8080/view/binaryData?blobKey=MASAGRO-HUB-V2-FV%5B%40version%3Dnull+and+%40uiVersion%3Dnull%5D%2FMASAGRO-HUB-V2-FormatoVisita%5B%40key%3Duuid%3Ae634c32b-0dde-4b6c-a9c9-b28dc5e95925%5D%2FB%3AFotografia1	uuid:e634c32b-0dde-4b6c-a9c9-b28dc5e95925
+Bajio	https://drive.google.com/uc?id=0B0o_FfSbPmHfT2RiTFlKc1lTOEk&export=download&display=/44967593_DSC_0423.JPG	336181243
+Seleccione Hub	https://drive.google.com/uc?id=0B0o_FfSbPmHfdFQ0NzlTS3pqVUU&export=download&display=/44967593_DSC_0374.JPG	336181415
+Pacifico Sur	https://drive.google.com/uc?id=0B0o_FfSbPmHfNDdqMlFsR1JGakE&export=download&display=/44967593_DSC08163.JPG	336182563
+Bajio	https://drive.google.com/uc?id=0B0o_FfSbPmHfMFhBQThMTXppWjg&export=download&display=/44967593_DSC_0433.JPG	336183319
+Bajio	https://drive.google.com/uc?id=0B0o_FfSbPmHfTXJaQWVqVjZoREk&export=download&display=/44967593_20161223_165946.jpg	336205684
+Bajio	https://drive.google.com/uc?id=0B0o_FfSbPmHfdkwyLXBOOWJLdTg&export=download&display=/44967593_20170125_122518.jpg	336207007
