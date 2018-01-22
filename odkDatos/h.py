@@ -58,7 +58,7 @@ except:
 time.sleep(15)
 rows = browser.find_elements_by_xpath('//*[@id="submission_table"]/tbody/tr')
 total_rows = len(rows)
-print '\nSe ncontraron un total de', total_rows - 1, 'registros \n'
+print '\nSe encontraron un total de', total_rows - 1, 'registros \n'
 
 time.sleep(2)
 
@@ -90,13 +90,13 @@ for row in rows:
 workbook.close()
 
 listSemillasDat = np.array(listSemillas).astype(np.int)
-print listSemillasDat
+# print listSemillasDat
 
 listFacilidadDat = np.array(listFacilidad).astype(np.int)
-print listFacilidadDat
+# print listFacilidadDat
 
 listMarcaDat = np.array(listMarca).astype(np.str)
-print listMarcaDat
+# print listMarcaDat
 
 df = pd.DataFrame({'NumeroSemillas': listSemillasDat, 'GradoFacilidad': listFacilidadDat, 'Marca': listMarcaDat})
 print df

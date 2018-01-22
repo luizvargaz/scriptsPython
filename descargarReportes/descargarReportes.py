@@ -73,7 +73,7 @@ for bitacora in bitacoras:
 	except:
 		print '\n #### No se puede abrir la pagina, comprueba tu coneccion a internet #### \n'
 	
-	# Desplegar el menu de opciones patra exportar el reporte
+	# Desplegar el menu de opciones para exportar el reporte
 	time.sleep(2)
 	try:
 		browser.execute_script("document.getElementById('ReportViewer1_ctl05_ctl04_ctl00_ButtonLink').click()") # http://stackoverflow.com/questions/7794087/running-javascript-in-selenium-using-python

@@ -1,4 +1,6 @@
 # https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-basics.html#injecting-javascript-synchronously
+# py -2 gcol.py
+
 import os
 import time
 import getpass
@@ -55,13 +57,12 @@ except:
     exit()
 
 conteo = 0
+
 for bitacora in bitacoras:
-	# fname = raw_input("Enter para abrir archivo (done para salir):")
-	#if fname == "done":
-	#	break
+	
 	line = bitacora.rstrip()
 	print '\nDescargando la bitacora: ', line
-	
+		
 	worksheet.write(conteo, 0, bitacora)
 	
 	url = 'http://bem.cimmyt.org/bitacora/Default.aspx?EditMode=DetailsExtension&id=' + bitacora
@@ -78,9 +79,10 @@ for bitacora in bitacoras:
 		print '\n #### No se puede encontrar el elemento #### \n'
 		worksheet.write(conteo, 1, "ERROR")
 				
-	print 'Colaborador: ', colaborador
+	print 'Productor: ', colaborador
 	
 	conteo = conteo + 1
+	print '\nSe han descargado ', conteo, ' registros'
 	
 workbook.close()
 
